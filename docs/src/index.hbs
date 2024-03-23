@@ -1,0 +1,71 @@
+{{!< default}}
+{{#contentFor 'title'}}Overview{{/contentFor}}
+{{#contentFor 'style'}}
+<style>
+/*Hide side navigation*/
+#kt_app_sidebar_navs {
+  display: none;
+}
+</style>
+{{/contentFor}}
+
+<!--begin::Section-->
+<div class="px-md-10 pt-md-10 pb-md-5">
+  <!--begin::Block-->
+  <div class="text-center mb-20">
+    <h1 class="fs-2tx fw-bold">AWS SDK Extension</h1>
+    <div class="fw-semibold fs-2 mb-10">
+      An extension that provides a simple interface to the AWS SDK.
+    </div>
+  </div>
+  <!--end::Block-->
+</div>
+<!--end::Section-->
+<!--begin::Section-->
+<div class="py-10">
+  <!--begin::Heading-->
+  <h1 class="fw-bold mb-5">Install</h1>
+  <!--end::Heading-->
+  <!--begin::Block-->
+  <div class="py-5">
+    Install with <a href="https://www.npmjs.com/" target="_blank">npm</a>:
+  </div>
+  <!--end::Block-->
+  <!--begin::Code-->
+  <div class="py-5">
+    <!--begin::Highlight-->
+    <div class="highlight">
+      <button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+      <div class="highlight-code">
+        <pre class="language-bash"><code class="language-bash">npm i aws-sdk-extension</code></pre>
+      </div>
+    </div>
+    <!--end::Highlight-->
+  </div>
+  <!--end::Code-->
+</div>
+<!--end::Section-->
+<!--begin::Section-->
+<div class="pt-10">
+  <!--begin::Heading-->
+  <h1 class="fw-bold mb-5">Usage</h1>
+  <!--end::Heading-->
+  <!--begin::Block-->
+  <div class="py-5">
+    Importing <code>aws-sdk-extension</code> will return an extended <code>Handlebars</code> with built-in helpers and more.
+  </div>
+  <!--end::Block-->
+  <!--begin::Code-->
+  <div class="py-5">
+    <!--begin::Highlight-->
+    <div class="highlight">
+      <button class="highlight-copy btn" data-bs-toggle="tooltip" title="Copy code">copy</button>
+      <div class="highlight-code">
+        <pre class="language-javascript"><code class="language-javascript">import * as AWSEx from &#039;aws-sdk-extension&#039;;</code></pre>
+      </div>
+    </div>
+    <!--end::Highlight-->
+  </div>
+  <!--end::Code-->
+</div>
+<!--end::Section-->

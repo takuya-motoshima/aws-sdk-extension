@@ -1,0 +1,73 @@
+{
+  "name": "aws-sdk-extension",
+  "version": "1.0.0",
+  "description": "An extension that provides a simple interface to the AWS SDK.",
+  "main": "dist/build.common.js",
+  "module": "dist/build.esm.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist/",
+    "types/",
+    "CHANGELOG.md",
+    "LICENSE",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist types",
+    "build": "rollup -c rollup.config.js",
+    "prewatch": "rm -rf dist types",
+    "watch": "rollup -c rollup.config.js --watc",
+    "test": "jest"
+  },
+  "_moduleAliases": {
+    "~": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takuya-motoshima/aws-sdk-extension.git"
+  },
+  "keywords": [
+    "amazon",
+    "aws",
+    "rekognition",
+    "ses",
+    "shared",
+    "library",
+    "lib",
+    "typescript",
+    "ts",
+    "esm",
+    "es6"
+  ],
+  "author": "Takuya Motoshima <developer.takuyamotoshima@gmail.com> (https://twitter.com/TakuyaMotoshima)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takuya-motoshima/aws-sdk-extension/issues",
+    "email": "developer.takuyamotoshima@gmail.com"
+  },
+  "homepage": "https://github.com/takuya-motoshima/aws-sdk-extension#readme",
+  "dependencies": {
+    "@aws-sdk/client-rekognition": "^3.398.0",
+    "@aws-sdk/client-ses": "^3.398.0",
+    "@smithy/node-http-handler": "^2.4.1",
+    "handlebars-extd": "^1.0.7",
+    "libmime": "^5.2.1",
+    "module-alias": "^2.2.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.2.1",
+    "@rollup/plugin-terser": "^0.4.3",
+    "@types/jest": "^29.5.12",
+    "@types/libmime": "^5.0.3",
+    "@types/node": "^14.18.32",
+    "dotenv": "^16.4.5",
+    "jest": "^29.7.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "typescript": "^5.2.2"
+  }
+}
